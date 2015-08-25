@@ -25,18 +25,38 @@
 		<div class="widget industry-news">
 
 			<h4>Industry News</h4>
+			
+			<?php if (function_exists('fetch_feed')) { ?>
+				
+				<?php include_once(ABSPATH . WPINC . '/feed.php'); 
+				
+				      $feed = fetch_feed('http://www.topix.com/rss/business/manufacturing');
+				
+					  $limit = $feed->get_item_quantity(2);
+					
+					  $items = $feed->get_items(0, $limit);
+					
+					if (!$items) {
+						
+						echo "problem";
+						
+					} else {
+						
+						// everything's cool
+						
+						foreach ($items as $item) { ?>
+							
+							<div class="sidebar-post">
+								<p class="date"><?php echo $item->get_date('F j, Y'); ?></p>
+								<h5><a href="<?php echo $item->get_permalink(); ?>"><?php echo $item->get_title(); ?></a></h5>
+								<p><?php echo $item->get_content(); ?></p>
+							</div>
+						
+					<?php } 
+					
+				    } ?>
 
-			<div class="sidebar-post">
-				<p class="date">March 11, 2010</p>
-				<h5>Widgets are the new Sprockets</h5>
-				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
-			</div>
-
-			<div class="sidebar-post">
-				<p class="date">March 03, 2010</p>
-				<h5>Fifth Birthday of the Intersprockletometer</h5>
-				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
-			</div>
+			<?php } ?>
 
 		</div> <!-- END Industry News -->
 		
