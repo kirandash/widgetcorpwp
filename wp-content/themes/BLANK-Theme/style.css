@@ -11,6 +11,8 @@ Version: 1
 
 * { margin: 0; padding: 0; }
 
+article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
 .group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 .group { display: inline-block; clear: both; }
 /* start commented backslash hack \*/ * html .group { height: 1%; } .group { display: block; } /* close commented backslash hack */
