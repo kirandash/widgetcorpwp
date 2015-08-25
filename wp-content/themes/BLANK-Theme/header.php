@@ -46,6 +46,10 @@
 	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
 
 	<?php wp_head(); ?>
+	
+	<script src="<?php bloginfo('template_url'); ?>/js/jquery.hoverflow.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/widgetcorp.js"></script>
+	
 </head>
 
 <body <?php body_class(); ?>>
