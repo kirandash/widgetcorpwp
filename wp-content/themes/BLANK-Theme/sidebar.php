@@ -3,13 +3,7 @@
 		<?php get_search_form(); ?>
 		
 		<nav>
-			<ul id="main-nav">
-				<li class="home"><a href="#">Home</a></li>
-				<li class="about"><a href="#">About Widget Corp</a></li>
-				<li class="contact"><a href="#">Contact Us</a></li>
-				<li class="store"><a href="#">Buy Widgets</a></li>
-				<li class="blog"><a href="#">The Grind <em>(our blog)</em></a></li>
-			</ul>
+			<?php wp_nav_menu(array('menu' => 'Main Nav Menu')); ?>
 		</nav>
 
 		<div class="widget latest-post">
