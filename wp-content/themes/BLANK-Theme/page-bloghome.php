@@ -22,7 +22,7 @@
 			<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 
 			<div class="entry">
-				<?php the_content(); ?>
+				<?php the_excerpt(); ?>
 			</div>
 
 		</div>
