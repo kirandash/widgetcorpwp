@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<div id="main-content">
+
 	<?php if (have_posts()) : ?>
 
 		<h2>Search Results</h2>
@@ -29,6 +31,8 @@
 		<h2>No posts found.</h2>
 
 	<?php endif; ?>
+	
+</div>
 
 <?php get_sidebar(); ?>
 
