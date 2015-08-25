@@ -9,6 +9,14 @@
 <?php get_header(); the_post(); ?>
 
 	<div id="main-content">
+		
+	<div class="breadcrumb">
+		<?php
+			if (function_exists('bcn_display')) {
+				bcn_display();
+			}
+		?>
+	</div>
 
 	<?php
 		

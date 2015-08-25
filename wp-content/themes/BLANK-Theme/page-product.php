@@ -10,12 +10,13 @@
 
 <div id='main-content'>
 	
-    <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
-		<?php if(function_exists('bcn_display'))
-        {
-            bcn_display();
-        }?>
-    </div>
+	<div class="breadcrumb">
+	<?php
+		if (function_exists('bcn_display')) {
+			bcn_display();
+		}
+	?>
+	</div>
 
 	<h2 class="product-title"><?php the_title(); ?></h2>
 
