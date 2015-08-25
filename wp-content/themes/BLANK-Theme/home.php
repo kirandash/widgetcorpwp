@@ -9,20 +9,26 @@
 	<h2>Featured Widgets</h2>
 
 	<ul id="featured-widgets">
+		
+		<?php query_posts("posts_per_page=1&post_type=page&post_parent=92"); the_post(); ?>
+		
 		<li>
-			<h3>Super Sprocket 1000</h3>
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+			<h3><?php the_title(); ?></h3>
+			<?php the_excerpt(); ?>
 			<div class="image-and-button">
-				<img src="/product-images/prod-supersprocket.png" alt="Image of Super Sprocket 1000" />
-				<a href="#" class="button">View Product</a>
+				<img src="<?php echo get_post_meta($post->ID, "product_regular", true); ?>" alt="Image of <?php the_title(); ?>" />
+				<a href="<?php the_permalink(); ?>" class="button">View Product</a>
 			</div>
 		</li>
+		
+		<?php query_posts("posts_per_page=1&post_type=page&post_parent=94"); the_post(); ?>
+		
 		<li>
-			<h3>Triple Sprunkler</h3>
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+			<h3><?php the_title(); ?></h3>
+			<?php the_excerpt(); ?>
 			<div class="image-and-button">
-				<img src="/product-images/prod-sprunkler.png" alt="Image of Super Sprunkler" />
-				<a href="#" class="button">View Product</a>
+				<img src="<?php echo get_post_meta($post->ID, "product_regular", true); ?>" alt="Image of <?php the_title(); ?>" />
+				<a href="<?php the_permalink(); ?>" class="button">View Product</a>
 			</div>
 		</li>
 	</ul>
