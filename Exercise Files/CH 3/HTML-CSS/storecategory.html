@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+
+	<title>Widget Corp</title>
+
+	<link rel='stylesheet' href='css/style.css'>
+	<link rel='stylesheet' href='css/jquery-ui-1.8.1.css'>
+	
+	<link rel='stylesheet' href='css/store.css'>
+
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+	<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js'></script>
+	<script src='js/jquery.hoverflow.min.js'></script>
+	<script src='js/widgetcorp.js'></script>
+</head>
+
+<body>
+
+	<div id="page-wrap" class="group">
+
+		<a href="#" id="home-link">Home</a>
+
+		<div id="header">
+			<h1><a href="#">Widget Corp</a></h1>
+			<p>Est. 1987</p>
+		</div>
+			
+		<div id="main-content">
+
+			<div class='product-group group'>
+				
+				<h3><a href='#'>Sprockets</a></h3>
+				
+				<a href="#" class="product-jump" title="$519.00">
+					<img src='product-images/prod-sprocketizer.png' />			     
+					<span class="product-title">Mega Sprocketizer</span>
+					<span class="product-code">WGA-998-d</span>
+				</a>
+
+				<a href="#" class="product-jump" title="$199.99">
+				    <img src='product-images/prod-supersprocket.png' />
+					<span class="product-title">Super Sprocket 1000</span>
+				    <span class="product-code">WGA-195-c</span>
+				 </a>
+
+			</div>
+					
+			<div class='product-group group'>
+				
+				<h3><a href='#'>Sprunklers</a></h3>
+				
+				 <a href="#" class="product-jump" title="$238.99">
+				    <img src='product-images/prod-sprunkler.png' />
+					<span class="product-title">Triple Sprunkler</span>
+				    <span class="product-code">ABC-19-hj4</span>
+				 </a>
+
+			</div>
+		
+		</div> <!-- END main-content -->
+
+		<aside>
+
+			<form action="#" id="searchform" method="get">
+				<div>
+					<label for="s" class="screen-reader-text">Search for:</label>
+					<input type=search results=5 placeholder=Search... id=s name=s>
+
+					<input type="submit" value="Search" id="searchsubmit" class="screen-reader-text">
+				</div>
+			</form>
+
+			<nav>
+				<ul id="main-nav">
+					<li class="home"><a href="#">Home</a></li>
+					<li class="about"><a href="#">About Widget Corp</a></li>
+					<li class="contact"><a href="#">Contact Us</a></li>
+					<li class="store"><a href="#">Buy Widgets</a></li>
+					<li class="blog"><a href="#">The Grind <em>(our blog)</em></a></li>
+				</ul>
+			</nav>
+
+			<div class="widget industry-news">
+
+				<h4>Industry News</h4>
+
+				<div class="sidebar-post">
+					<p class="date">March 11, 2010</p>
+					<h5>Widgets are the new Sprockets</h5>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+				</div>
+
+				<div class="sidebar-post">
+					<p class="date">March 03, 2010</p>
+					<h5>Fifth Birthday of the Intersprockletometer</h5>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+				</div>
+
+			</div> <!-- END Industry News -->
+
+		</aside>
+
+	</div> <!-- END Page Wrap -->
+
+	<footer>
+		<div id="footer-quote">
+			One wheels turns another.
+		</div>
+		<div id="footer-copyright">
+			&copy;2010 Widget Corp.
+		</div>
+	</footer>
+
+</body>
+
+</html>

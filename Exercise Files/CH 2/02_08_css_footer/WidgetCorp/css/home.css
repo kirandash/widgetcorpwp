@@ -1,0 +1,49 @@
+#intro {
+	margin: 20px 0;
+	line-height: 2;
+}
+
+#main-quote {
+	background: url(../images/mainquote.png) no-repeat;
+	width: 475px;
+	height: 188px;
+	text-indent: -9999px;
+	margin: 0 0 20px 22px;
+}
+
+#featured-widgets {
+	list-style: none;
+}
+
+#featured-widgets li {
+	position: relative;
+	margin: 0 0 20px 0;
+}
+
+#featured-widgets li h3 {
+	background: #647484;
+	color: white;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 4px;
+	text-indent: 200px;
+}
+
+#featured-widgets li p {
+	padding: 0 0 0 204px;
+	color: #666;
+	line-height: 1.5;
+	margin: 12px 0;
+}
+
+#featured-widgets li img {
+	position: absolute;
+	top: -10px;
+	left: 0;
+}
+
+#featured-widgets li .button {
+	position: absolute;
+	top: 150px;
+	left: 32px;
+}

@@ -1,0 +1,14 @@
+* { margin: 0; padding: 0; }
+html { background: black url(../images/bg.jpg); }
+body { font: 14px/1.4 Georgia, serif; }
+
+article, aside, figure, footer, header, nav, section { display: block; }
+
+#page-wrap { width: 800px; margin: 30px auto 10px; 
+	         background: white url(../images/mailmark.png) top right no-repeat; }
+
+header { position: relative; padding: 0 0 0 280px; border-bottom: 1px solid #999; }
+header p { position: absolute; right: 30px; bottom: 20px; text-transform: uppercase; letter-spacing: 2px; font-size: 20px; }
+h1 { font: 40px Helvetica, Arial, Sans-Serif; text-transform: uppercase; color: #666; 
+	 text-shadow: 2px 2px 0 #d8d8dc; border-left: 1px solid #999; padding: 40px 0 20px 20px; }
+#logo { position: absolute; top: -25px; left: -50px; background: url(../images/logo.png) no-repeat; width: 295px; height: 191px; }
